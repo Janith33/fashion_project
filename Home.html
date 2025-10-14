@@ -11,45 +11,123 @@
     <div class="header">
         <p>Fashions</p>
 
-        <!--<div class="search-container">
+        <div class="search-container">
             <input type="text" placeholder="Search..." class="search-input">
             <button class="search-btn">Search</button>
-        </div>-->
+        </div>
 
     </div>
 
-    <div class="nav">
+    <nav class="nav">
         <ul>
-            <li><a href="ProjectJ.html" target="_blank">Home</a></li>
+            <li><a href="Home.html" target="_blank">Home</a></li>
             <li><a href="Register.html" target="_blank"> Register</a></li>
             <li><a href="about.html" target="_blank">About Us</a></li>
             <li><a href="contact.html" target="_blank">Contact</a></li>
         </ul>
-    </div>
+    </nav>
 
     <br>
 
-    <section class="login">
-        <h2>Login to Your Account</h2>
-        <br>
+    <div class="list_section">
+    <ul>
+        <li class="category-item">
+            <a href="#" class="category-link">Women</a>
+            <ul class="dropdown">
+                <li><a href="#">Dresses</a></li>
+                <li><a href="#">Tops</a></li>
+                <li><a href="#">Bottoms</a></li>
+                <li><a href="#">Outerwear</a></li>
+                <li><a href="#">Accessories</a></li>
+            </ul>
+        </li>
 
-        <form class="Login">
-            <label name="name">User Name</label>
-            <input type="text" name="name" placeholder="Enter your Email or username" required><br>
+        <li class="category-item">
+            <a href="#" class="category-link">Men</a>
+            <ul class="dropdown">
+                <li><a href="#">Shirts</a></li>
+                <li><a href="#">Pants</a></li>
+                <li><a href="#">Outerwear</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Footwear</a></li>
+            </ul>
+        </li>
 
-            <br>
+        <li class="category-item">
+            <a href="#" class="category-link">Child</a>
+            <ul class="dropdown">
+                <li><a href="#">Shirts</a></li>
+                <!--<li><a href="#">Pants</a></li>-->
+                <li><a href="#">Outerwear</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Footwear</a></li>
+            </ul>
+        </li>
 
-            <label name="password">Password</label>
-            <input type="password" class="password" placeholder="Enter your password" required><br>
 
-            <br>
+        <li class="category-item">
+            <a href="#" class="category-link">New Arrivals</a>
+            <ul class="dropdown">
+                <li><a href="#">Shirts</a></li>
+                <!--<li><a href="#">Outerwear</a></li>
+                <li><a href="#">Accessories</a></li>
+                <li><a href="#">Footwear</a></li>-->
+            </ul>
+        </li>
 
-            <button type="submit">LogIn</button>
 
-            <p>Don't have an account? <a href="register.html">Register here</a></p>
-            <p><a href="#">Forgot Password?</a></p>
-        </form>
-    </section>
+        <li class="category-item">
+                <a href="#" class="category-link">Kids item and Toys</a>
+        </li>
+
+        
+        <li class="category-item">
+                <a href="#" class="category-link">Home & Living</a>
+        </li>
+
+    </ul>
+</div>
+
+    <br>
+
+
+<!-- Single container for all slides -->
+<div class="slideshow-container">
+    <!-- Slide 1 -->
+    <div class="slidefade">
+        <img src="move_image_1.jpeg" style="width: 100%">
+    </div>
+
+    <!-- Slide 2 -->
+    <div class="slidefade">
+        <img src="move_image_2.jpeg" style="width: 100%">
+    </div>
+
+    <!-- Slide 3 -->
+    <div class="slidefade">
+        <img src="move_image_3.jpeg" style="width: 100%">
+    </div>
+
+    <!-- Slide 4 -->
+    <div class="slidefade">
+        <img src="move_image_4.jpeg" style="width: 100%">
+    </div>
+
+    <!-- Navigation buttons inside the container -->
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+
+<br>
+
+<!-- Dots container -->
+<div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span> 
+    <span class="dot" onclick="currentSlide(2)"></span> 
+    <span class="dot" onclick="currentSlide(3)"></span> 
+    <span class="dot" onclick="currentSlide(4)"></span>
+</div>
+    
     
     <footer class="footer">
         <div class="footer-content">
