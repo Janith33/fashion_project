@@ -24,11 +24,11 @@ body{
     overflow-x: hidden
 }
 
-/*.login{
+.login{
     background: white;
     border-radius: 12px;
     padding: 20px;
-    /*box-shadow: 0 4px 8px black;*
+    /*box-shadow: 0 4px 8px black;*/
     margin-top: 10px;
     text-align: center;
     width: 60%;
@@ -72,7 +72,7 @@ body{
 
 .login button :hover{
     opacity: 0.8;
-}*/
+}
 
 @media (max-width: 768px) {
     .login {
@@ -137,17 +137,61 @@ body{
 .nav ul li a.active{
     background-color: #04AA6D;
     color: white;
+}*/
+
+
+.search-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+  padding: 5px 10px;
+  width: fit-content;
+  margin: 15px auto; /* centers horizontally */
+  z-index: 10;
 }
 
 
+.search-input[type="text"] {
+  /*outline: none;*/
+  padding: 10px 15px;
+  border-radius: 25px;
+  font-size: 14px;
+  margin-left: 20%;
+  margin-top: 1%;
+  width: 550px;
+}
 
-/*footer_section*/
+.search-btn {
+  background-color: #f1f1f1;
+  color: rgb(1, 0, 0);
+  font-weight: bold;
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  margin-left: 1%;
+  /*margin-right: 70%;*/
+  margin-bottom: 20%;
+  border-radius: 25px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.search-btn:hover {
+  background: linear-gradient(to right, #ff6a00, #ee0979);
+  opacity: 0.8;
+}
+
 .footer-content a{
     margin: 10px;
     font-size: 15px;
-    color: rgb(255, 255, 255);
+    color: white;
     text-decoration: none;
     margin-top: 10px;
+
 }
 
 .footer-content p{
@@ -178,8 +222,6 @@ body{
 }
 
 
-
-
 /*footer address information*/
 .infor{
     position: relative;
@@ -202,43 +244,4 @@ body{
 
 .infor svg{
     margin-left: 1.7%;
-}
-
-
-.login{
-    text-align: center;
-    margin-top: 4%;
-    margin-bottom: 5%;
-}
-
-.login h2{
-    font-size: 30px;
-    font-weight: bold;
-    color: black;
-}
-
-.register_form input{
-    padding: 11px;
-    margin-bottom: 15px;
-    width: 25%;
-    border-radius: 8px;
-    border: 1px solid;
-}
-
-.btn{
-    background: linear-gradient(to right, #ff6a00, #ee0979);
-    border-radius: 15px;
-    font-weight: bold;
-    font-size: 15px;
-    cursor: pointer;
-    transition: 0.3s;
-    border: none;
-    margin-top: 20px;
-   
-}
-
-.login p{
-    font-weight: bold;
-    margin-top: 10px;
-    font-size: 15px;
 }

@@ -74,3 +74,41 @@ function addInteractivity() {
 
 // Call after DOM is loaded
 document.addEventListener('DOMContentLoaded', addInteractivity);
+
+
+
+
+
+
+
+
+
+/* Add hover effects and animations for the cloths selections*/
+function addInteractivity() {
+    const optionalElements = document.querySelectorAll('.cloth_selection');
+    
+    optionalElements.forEach(element => {
+        // Hover effect
+        element.addEventListener('mouseenter', function() {
+            this.style.transform = 'translateY(-5px)';
+            this.style.transition = 'transform 0.3s ease';
+            this.style.boxShadow = '0px 8px 16px rgba(0, 0, 0, 0.3)';
+        });
+
+        element.addEventListener('mouseleave', function() {
+            this.style.transform = 'translateY(0)';
+            this.style.boxShadow = '0px 4px 8px rgba(0, 0, 0, 0.2)';
+        });
+
+        // Click effect
+        element.addEventListener('click', function() {
+            this.style.backgroundColor = '#f8f9fa';
+            setTimeout(() => {
+                this.style.backgroundColor = 'white';
+            }, 300);
+        });
+    });
+}
+
+// Call after DOM is loaded
+document.addEventListener('DOMContentLoaded', addInteractivity);

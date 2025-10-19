@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>User_Registation</title>
-    <link rel="stylesheet" type="text/css" href="Register.css">
+    <link rel="stylesheet" type="text/css" href="login.css">
 </head>
 <body>
+
     <div class="header">
         <p>Fashions</p>
 
@@ -19,30 +20,34 @@
 
     <div class="nav">
         <ul>
-            <li><a href="Home.html" target="_blank">Home</a></li>
-            <li><a href="login.html" target="_blank">Login</a></li>
-            <li><a href="about.html" target="_blank">About Us</a></li>
-            <li><a href="contact.html" target="_blank">Contact</a></li>
+            <li><a href="Home.html">Home</a></li>
+            <li><a href="login.html"> Login</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
         </ul>
     </div>
 
     <br>
 
     <section class="login">
-        <h2>Register to Your Fashion Account</h2>
+        <h2>Login to Your Account</h2>
+        <br>
 
-        <form class="register_form">
-
+        <form class="Login">
+            <label name="name">User Name</label>
             <input type="text" name="name" placeholder="Enter your Email or username" required><br>
-            <input type="password" name="password" placeholder="Enter your Password" required><br>
-            <input type="password" name="password" placeholder="Confirm your Password" required><br>
 
-            <input class="btn" type="submit" value="Register"><br>
+            <br>
 
-            <p>OR <br> <br> SIGN IN with</p>
+            <label name="password">Password</label>
+            <input type="password" class="password" placeholder="Enter your password" required><br>
 
-            <button class="btn"  type="submit">Google</button>
+            <br>
 
+            <button type="submit">LogIn</button>
+
+            <p>Don't have an account? <a href="Register.html">Register here</a></p>
+            <p><a href="#">Forgot Password?</a></p>
         </form>
     </section>
     
@@ -69,6 +74,18 @@
         </div>
 
 
+        <!--<div class="card_cantainer">
+            <p>Accepted Cards</p>
+            <i class="card" style="color: #EB001B; font-size: 24px;"></i>
+            <i class="card" style="color: #1A1F71; font-size: 24px;"></i>
+            <i class="card" style="color: #555; font-size: 24px;"></i>
+        </div>-->
+
+        <!--<div class="note">
+            <p>We are the best online store in Sri Lanka. More than 1000 items are available here.<br>
+            Now come and visit us. You will love it.</p>
+        </div>-->
+
         <div class="footer-content">
             <p>Follow us on:</p>
             <a href="#">Facebook</a> |
@@ -86,5 +103,7 @@
 
         <p>&copy;All Rigths Reserved</p>
     </footer>
+
+    <script src="login.js"></script>
 </body>
 </html>
